@@ -29,7 +29,7 @@ While the image can be built remotely using this repository as the build context
     docker image ls
     ```
 
-If everything worked as intended, you should see a list including the ```tf2_od``` image we just built, along with the core tensorflow image that was used as the base.
+If everything worked as intended, you should see a list including the ```tf2_od``` image you just built, along with the core tensorflow image that was used as the base.
 
 ## Usage
 Sample scripts to launch the container are included in the ```launcher``` directory. The script mounts local volumes to the container, configures the port for accessing jupyter notebook, then launches a bash shell that starts in the ```tensorflow``` user's home directory.
