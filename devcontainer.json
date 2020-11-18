@@ -1,0 +1,18 @@
+{
+    "name": "tf2_od_vscode",
+    "image": "tf2_od",
+    "workspaceMount": "type=bind,source=${localWorkspaceFolder},target=/home/tensorflow/work",
+    "workspaceFolder": "/home/tensorflow/work",
+
+    "mounts": [
+        "type=bind,source=/home/bmaguire/saved_models,target=/home/tensorflow/saved_models"
+    ],
+    
+    "extensions": [
+        "ms-python.python"
+    ],
+
+    "runArgs": [
+        "--gpus=all",
+    ]
+}
